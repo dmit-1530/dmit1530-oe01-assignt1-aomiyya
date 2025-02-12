@@ -33,8 +33,56 @@ footer h2 {
     font-family: "Libre Baskerville", serif;
 }
 
+header div,
+footer .logo {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+h1,
+footer h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+header img {
+    max-height: 3.5rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+footer {
+    padding: 3rem 1.5rem;
+}
+
 footer p {
     color: var(--blue-grey-200);
+}
+
+footer p:first-of-type {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+footer img {
+    max-height: 4.75rem;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+footer h3,
+footer a {
+    text-align: left;
+    display: block;
 }
 
 h2 {
