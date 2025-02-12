@@ -2,16 +2,99 @@
     --blue-grey-50: #ECEFF1;
     --blue-grey-100: #CFD8DC;
     --blue-grey-200: #B0BEC5;
+    --blue-grey-400: #78909C;
+    --blue-grey-800: #37474f;
     --blue-grey-900: #263238;
+    --dark-grey: #111; 
+    --white: #fff;
+    
 }
 
 body {
     color: #000;
-    text-align: center; 
+    text-align: center;
 }
 
-header, footer {
+header, 
+footer {
+    background-color: var(--dark-grey);
+    color: var(--white);
+    padding: 2rem 4rem;
+}
+
+header a,
+footer a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+header h1,
+footer h2 {
+    font-family: "Libre Baskerville", serif;
+}
+
+footer p {
+    color: var(--blue-grey-200);
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+section:first-child {
     background-color: var(--blue-grey-50);
-    color: #fff;
-    padding: 2rem 4rem;   
+}
+
+.home section:first-child img {
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+    background-color: var(--dark-grey);
+    color: var(--blue-grey-50);
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+blockquote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.quote {
+    background-color: var(--blue-grey-400);
+    color: var(--white);
+}
+
+p {
+    margin: 0;
+}
+
+.blue-grey-50 {
+    color: var(--blue-grey-50);
+}
+
+.home section:nth-last-child(2) {
+    background-color: var(--blue-grey-100);
+}
+
+.gallery section:nth-last-child(2) {
+    background-color: var(--blue-grey-400);
+    color: var(--white);
+}
+
+section:last-child {
+    background-color: var(--blue-grey-800);
+    padding: 4rem 2rem;
+}
+
+.home section:last-child div {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+}
+
+.gallery section:last-child {
+    color: var(--white);
 }
