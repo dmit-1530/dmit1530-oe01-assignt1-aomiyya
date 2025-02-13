@@ -85,7 +85,8 @@ footer a {
     display: block;
 }
 
-h2 {
+h2,
+blockquote {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
     font-size: 2rem;
@@ -131,17 +132,30 @@ figure {
     padding-bottom: 1rem;
 }
 
-blockquote {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+p {
+    margin: 0;
+}
+
+.asterisk {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-top: 3rem;
+    line-height: 2rem;
+}
+
+main h2,
+main h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.gallery blockquote {
+    padding: 1.5rem 0;
 }
 
 .quote {
     background-color: var(--blue-grey-400);
     color: var(--white);
-}
-
-p {
-    margin: 0;
 }
 
 .blue-grey-50 {
