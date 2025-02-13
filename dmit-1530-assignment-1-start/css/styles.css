@@ -87,7 +87,12 @@ footer a {
 
 h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+section {
+    padding: 2rem 1.5rem;
 }
 
 section:first-child {
@@ -97,6 +102,7 @@ section:first-child {
 .home section:first-child img {
     display: block;
     margin: 0 auto;
+    padding-bottom: 1.5rem;
 }
 
 button {
@@ -105,6 +111,24 @@ button {
     border: none;
     padding: 1rem;
     border-radius: 0.5rem;
+    margin: 2rem;
+}
+
+.gallery section:first-child h3,
+.gallery section:first-child p {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.gallery section:first-child img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+figure {
+    margin: 1rem 0;
+    text-align: left;
+    padding-bottom: 1rem;
 }
 
 blockquote {
@@ -135,7 +159,6 @@ p {
 
 section:last-child {
     background-color: var(--blue-grey-800);
-    padding: 4rem 2rem;
 }
 
 .home section:last-child div {
