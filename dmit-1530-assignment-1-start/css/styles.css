@@ -7,7 +7,6 @@
     --blue-grey-900: #263238;
     --dark-grey: #111; 
     --white: #fff;
-    
 }
 
 body {
@@ -79,7 +78,7 @@ footer a {
     display: block;
 }
 
-/* FONTS */
+/* FONT STYLING */
 header h1,
 footer h2 {
     font-family: "Libre Baskerville", serif;
@@ -95,7 +94,8 @@ blockquote {
 .home section:first-child, 
 .gallery section:first-child h2,
 section:nth-child(2),
-blockquote {
+blockquote,
+.home section:nth-last-child(2) p {
     text-align: center;
 }
 
@@ -200,11 +200,40 @@ figure {
     background-color: var(--blue-grey-100);
 }
 
+.home section:nth-last-child(2) h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.home section:nth-last-child(2) div .asterisk {
+    margin-top: 0;
+    text-align: left;
+    margin-top: 3rem;
+}
+
+.home section:nth-last-child(2) img,
+.gallery section:last-child img {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.gallery section:last-child {
+    padding-bottom: 4rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
 section:last-child {
     background-color: var(--blue-grey-800);
 }
 
-/* FIFTH SECTION (HOME) */
+/* FIFTH SECTION (HOME ONLY) */
 .home section:last-child div {
     background-color: var(--white);
     border-radius: 0.5rem;
