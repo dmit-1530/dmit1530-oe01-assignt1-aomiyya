@@ -97,7 +97,7 @@ h2,
 blockquote {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 footer p:nth-child(3),
@@ -134,6 +134,7 @@ section:first-child {
 .home section:first-child img {
     display: block;
     margin: 0 auto;
+    padding-top: 1rem;
     padding-bottom: 1.5rem;
 }
 
@@ -141,9 +142,10 @@ button {
     background-color: var(--dark-grey);
     color: var(--blue-grey-50);
     border: none;
-    padding: 1rem;
+    padding: 1.25rem;
     border-radius: 0.5rem;
     margin: 2rem;
+    font-size: 1rem;
 }
 
 .gallery section:first-child h3,
@@ -152,8 +154,8 @@ button {
 }
 
 .gallery section:first-child img {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem auto;
+    width: 100%;
 }
 
 .gallery section:first-child h3:first-child {
@@ -166,6 +168,10 @@ figure {
 }
 
 /* SECOND SECTION */
+.home section:nth-child(2) {
+    margin-bottom: 2rem;
+}
+
 .home section:nth-child(2) h2,
 .home section:nth-child(2) h3 {
     margin-top: 0;
@@ -250,6 +256,7 @@ section:last-child {
 }
 
 @media screen and (min-width: 720px) {
+    /* HEADER AND FOOTER */
     header {
         display: flex;
         justify-content: space-between;
@@ -280,5 +287,61 @@ section:last-child {
     footer nav {
         width: 55%;
         justify-content: space-around;
+    }
+
+    /* FIRST SECTION */
+    .gallery section:first-child div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .gallery section:first-child div div,
+    .gallery section:first-child div img:nth-last-child(4),
+    figure {
+        width: 47%;
+    }
+
+    figure {
+        order: 1;
+        margin: 0;
+    }
+
+    figure img {
+        width: 100%;
+    }
+
+    .gallery section:first-child h3:first-child {
+        margin: 1rem 0 0 0;
+    }
+
+    .gallery section:first-child div:nth-last-child(3) p {
+        margin-bottom: 0;
+    }
+
+    /* SECOND SECTION */
+    .home section:nth-child(2) p:nth-last-child(2) {
+        margin: 0 1rem;
+    }
+
+    .home section:nth-child(2) div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0 2rem;
+    }
+
+    .home section:nth-child(2) div div {
+        width: 46%;
+        text-align: left;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .home section:nth-child(2) div div .asterisk {
+        text-align: left;
+        margin-bottom: 0.5rem;
     }
 }
