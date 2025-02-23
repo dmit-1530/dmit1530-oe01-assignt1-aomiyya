@@ -229,6 +229,10 @@ figure {
     margin-bottom: 1rem;
 }
 
+.gallery section:last-child img {
+    width: 100%;
+}
+
 .gallery section:last-child {
     color: var(--white);
     padding-bottom: 4rem;
@@ -411,7 +415,7 @@ section:last-child {
     /* HEADER AND FOOTER */
     header div,
     .footer-container {
-        max-width: 80rem;
+        max-width: 72rem;
         margin: 0 auto;
     }
     
@@ -436,7 +440,7 @@ section:last-child {
     section div,
     .quote div,
     .gallery blockquote {
-        max-width: 80rem;
+        max-width: 72rem;
         margin: 0 auto;
     }
 
@@ -457,5 +461,32 @@ section:last-child {
 
     .gallery blockquote {
         margin: 4rem auto;
+    }
+
+    /* FOURTH SECTION */
+    .home section:nth-last-child(2) div:nth-child(2) div:nth-last-child(2) {
+        order: -1;
+    }
+
+    .home section:nth-last-child(2) img {
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+
+    .gallery section:last-child div img:first-child {
+        width: 34%;
+    }
+
+    .gallery section:last-child div div {
+        width: 62%;
+    }
+
+    .gallery section:last-child div div img {
+        width: 100%;
+    }
+
+    /* FIFTH SECTION (HOME ONLY) */
+    .home section:last-child div {
+        width: 44rem;
     }
 }
