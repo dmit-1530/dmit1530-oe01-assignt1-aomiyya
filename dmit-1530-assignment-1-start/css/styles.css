@@ -37,7 +37,7 @@ footer a {
     color: var(--white);
 }
 
-header div,
+header div div,
 .logo div {
     display: flex;
     justify-content: center;
@@ -217,7 +217,7 @@ figure {
     text-align: center;
 }
 
-.home section:nth-last-child(2) div .asterisk {
+.home section:nth-last-child(2) div:nth-child(2) .asterisk {
     margin-top: 0;
     text-align: left;
     margin-top: 3rem;
@@ -257,14 +257,17 @@ section:last-child {
 
 @media screen and (min-width: 720px) {
     /* HEADER AND FOOTER */
-    header {
+    header div {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 3rem;
     }
 
-    footer {
+    header h1 {
+        margin: 0;
+    }
+
+    .footer-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -318,7 +321,7 @@ section:last-child {
         margin: 0 1rem;
     }
 
-    .home section:nth-child(2) div {
+    .home section:nth-child(2) div:nth-child(2) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -356,7 +359,7 @@ section:last-child {
     }
 
     /* FOURTH SECTION */
-    .home section:nth-last-child(2) div:nth-child(4) {
+    .home section:nth-last-child(2) div:nth-child(2) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -364,7 +367,7 @@ section:last-child {
         gap: 1.5rem;
     }
 
-    .home section:nth-last-child(2) div div,
+    .home section:nth-last-child(2) div:nth-child(2) div,
     .home section:nth-last-child(2) img {
         width: 47%;
         flex-direction: column;
@@ -374,7 +377,7 @@ section:last-child {
         margin-top: 6.5rem;
     }
 
-    .home section:nth-last-child(2) div div:nth-last-child(2) {
+    .home section:nth-last-child(2) div:nth-child(2) div:nth-last-child(2) {
         order: 1;
     }
 
@@ -398,9 +401,47 @@ section:last-child {
         text-align: center;
     }
 
-
     /* FIFTH SECTION (HOME ONLY) */
     .home section:last-child div {
         width: 70%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* HEADER AND FOOTER */
+    header div,
+    .footer-container {
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+    
+    header div div {
+        margin: 0;
+    }
+
+    .footer-container {
+        justify-content: space-between;
+    }
+
+    footer nav {
+        width: 45%;
+        justify-content: space-between;
+    }
+
+    .footer-container p:last-child {
+        margin: 0 auto;
+    }
+
+    /* MAIN */
+    section div,
+    .quote div,
+    blockquote {
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+
+    /* FIRST SECTION */
+    .home section:first-child img {
+        width: 100%;
     }
 }
